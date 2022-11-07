@@ -17,6 +17,7 @@ let tCPrice = 1250;
 let tCAmount = 0;
 let difficulty = 1.8;
 let prestigeCoins = 999000000;
+
 function numGen() {
     thrw = Math.ceil(Math.random() * 6);
     document.getElementById('dicepic').src = `img/dice${thrw}.png`;
@@ -59,7 +60,17 @@ betterDice.addEventListener('click', function() {
         bDPrice *= difficulty;
         bDiceAmount ++;
     }
+    else{
+        error();
+    }
 })
+
+function error(){
+    Swal.fire({
+        icon: 'error',
+        text: `You don't have enough coins`,
+      })
+}
 
 throwingMachine.addEventListener('click', function() {
     if (coinsA >= tMPrice){
@@ -67,6 +78,9 @@ throwingMachine.addEventListener('click', function() {
         coinsA -= tMPrice;
         tMPrice *= difficulty;
         tMAmount++;
+    }
+    else{
+        error();
     }
 })
 
@@ -76,6 +90,9 @@ throwingCup.addEventListener('click', function() {
         coinsA -= tCPrice;
         tCPrice *= difficulty;
         tCAmount++;
+    }
+    else{
+        error();
     }
 })
 
@@ -92,5 +109,8 @@ document.getElementById('pButton').addEventListener('click', function() {
         tCAmount = 0;
         difficulty -= 0.1;
         prestigeCoins *= 100;
+    }
+    else{
+        error();
     }
 })

@@ -12,7 +12,6 @@
     visibility: hidden;
     background-color: black;
     color: #fff;
-    text-align: center;
     padding: 5px 0;
     border-radius: 6px;
     position: absolute;
@@ -36,9 +35,7 @@
     border-radius: 8px;
 }
 
-.coinsLayout{
-    text-align: center;
-}
+
 
 .btn{
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(52,0,74,1) 100%)  !important;
@@ -48,9 +45,7 @@
     border-radius: 15px;
 }
 
-.mainButton{
-    text-align: center;
-}
+
 body{
     background: linear-gradient(90deg, rgba(120,29,135,1) 0%, rgba(39,0,78,1) 100%);
     color: #fff
@@ -61,7 +56,6 @@ body{
     bottom: 0;
     width:40%;
     margin-left: 30%;
-    text-align: center;
     margin-bottom: 5%;
     border-radius: 15px;
 }
@@ -69,7 +63,6 @@ body{
     visibility: hidden;
     background-color: black;
     color: #fff;
-    text-align: center;
     padding: 5px 0;
     border-radius: 6px;
     position: absolute;
@@ -78,4 +71,8 @@ body{
     left: 50%;
     margin-left: -90px;
     margin-bottom: 10%;
+}
+
+.center{
+    text-align: center;
 }
