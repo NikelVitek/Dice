@@ -1,0 +1,81 @@
+#dicepic{
+    width: 15%;
+    height: 15%;
+}
+
+.tooltipA{
+    position: relative;
+    display: inline-block;
+       
+}
+.tooltipA .tooltipText {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    margin-bottom: 5px;
+  }
+
+  .tooltipA:hover .tooltipText {
+    visibility: visible;
+  }
+
+  .TPBdiv:hover .tooltipPB{
+    visibility: visible;
+}
+
+.upgrade{
+    border: 3px solid ;
+    border-radius: 8px;
+}
+
+.coinsLayout{
+    text-align: center;
+}
+
+.btn{
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(52,0,74,1) 100%)  !important;
+    border-color: #000 !important;
+    padding: 5px;
+    width: 75%;
+    border-radius: 15px;
+}
+
+.mainButton{
+    text-align: center;
+}
+body{
+    background: linear-gradient(90deg, rgba(120,29,135,1) 0%, rgba(39,0,78,1) 100%);
+    color: #fff
+}
+
+.pButton{
+    position: fixed;
+    bottom: 0;
+    width:40%;
+    margin-left: 30%;
+    text-align: center;
+    margin-bottom: 5%;
+    border-radius: 15px;
+}
+.tooltipPB{
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    width: 180px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -90px;
+    margin-bottom: 10%;
+}
