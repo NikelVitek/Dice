@@ -1,54 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" sizes="192x192" href="img/logo.png">
     <title>Dice clicker
     </title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-    
-    </header>
     <main>
 
-    <div class="m-3" >
-        <div class="center">
-        <p id="coins"></p>
-        <p id="CPStext"></p>
-        <p id="multiplier"></p>
-        </div>
-        <div class="center">
-        <button class="btn btn-danger" id="play"><img src="img/dice1.png" alt="dice" id="dicepic"><br><span id="dice"></span></button>
-  
-    </div>
-    </div>
-    <div id="upgrades">
-        <h3>Upgrades</h3>
-        <div class="tooltipA">
-        <button id="betterDice" class="upgrade"></button>
-        <span class="tooltipText center" id="bDAmount">
-         </span></div>
-        <div class="tooltipA">
-        <button id="throwingMachine" class="upgrade"></button>
-        <span class="tooltipText center" id="tMAmount"></span>
-        </div>
-        <div class="tooltipA">
-            <button id="throwingCup" class="upgrade"></button>
-            <span class="tooltipText center" id="tCAmount"></span>
+        <div class="m-3">
+            <div class="center">
+                <p id="coins"></p>
+                <p id="CPStext"></p>
+                <p id="multiplier"></p>
             </div>
-    </div>
-    <div class="TPBdiv">
-    <button class="pButton center" id="pButton">Prestige</button>   
-    <span class="tooltipPB center" id="prestige">You need 999 Milion coins to prestige</br>After prestige you will start with multiplier 2x and upgrades will be cheaper in late game <br> Get 3 prestiges to finish the game<span>
-    </div>
-</main> 
-<script src="js/game.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <div class="center">
+                <button class="btn btn-danger mainButton" id="play"><img src="img/dice1.png" alt="dice" id="dicepic"><br><span
+                        id="dice"></span></button>
+
+            </div>
+        </div>
+        <div id="upgrades">
+            <h3>Upgrades</h3>
+            <div class="tier1">
+                <div class="tooltipA">
+                    <button id="throwingMachine" class="upgrade"></button>
+                    <span class="tooltipText center" id="tMAmount"></span>
+                </div>
+                <div class="tooltipA">
+                    <button id="betterDice" class="upgrade"></button>
+                    <span class="tooltipText center" id="bDAmount">
+                    </span>
+                </div>
+                <div class="tooltipA">
+                    <button id="throwingCup" class="upgrade"></button>
+                    <span class="tooltipText center" id="tCAmount"></span>
+                </div>
+            </div>
+            <div class="tier2">
+                <div class="tooltipA">
+                    <button id="throwingMachine2" class="upgrade"></button>
+                    <span class="tooltipText center" id="tMAmount2"></span>
+                </div>
+                <div class="tooltipA">
+                    <button id="betterDice2" class="upgrade"></button>
+                    <span class="tooltipText center" id="bDAmount2">
+                    </span>
+                </div>
+                <div class="tooltipA">
+                    <button id="throwingCup2" class="upgrade"></button>
+                    <span class="tooltipText center" id="tCAmount2"></span>
+                </div>
+            </div>
+            <div class="tier3">
+                <div class="tooltipA">
+                    <button id="throwingMachine3" class="upgrade"></button>
+                    <span class="tooltipText center" id="tMAmount3"></span>
+                </div>
+                <div class="tooltipA">
+                    <button id="betterDice3" class="upgrade"></button>
+                    <span class="tooltipText center" id="bDAmount3">
+                    </span>
+                </div>
+                <div class="tooltipA">
+                    <button id="throwingCup3" class="upgrade"></button>
+                    <span class="tooltipText center" id="tCAmount3"></span>
+                </div>
+            </div>
+        </div>
+        <div class="TPBdiv">
+            <button class="pButton center" id="pButton">Prestige</button>
+            <span class="tooltipPB center" id="prestige">You need 1 Milion coins to prestige<br>After prestige you will
+                start with multiplier 2x and upgrades will be cheaper in late game <br> Get 3 prestiges to finish the
+                game</span>
+        </div>
+    </main>
+    <script src="js/game.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>

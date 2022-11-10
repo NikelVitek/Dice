@@ -6,7 +6,8 @@
 .tooltipA{
     position: relative;
     display: inline-block;
-       
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .tooltipA .tooltipText {
     visibility: hidden;
@@ -32,7 +33,7 @@
 
 .upgrade{
     border: 3px solid ;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 
 
@@ -74,5 +75,14 @@ body{
 }
 
 .center{
+    text-align: center;
+}
+
+#upgrades h3{
+    text-align: center;
+}
+
+.tier1, .tier2, .tier3{
+    width: 100%;
     text-align: center;
 }
